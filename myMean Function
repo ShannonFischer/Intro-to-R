@@ -1,0 +1,14 @@
+Input:
+assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+myMean <- function(assignment2) { return(sum(assignment2)/length(assignment2)) }
+myMean(assignment2)
+
+Output:
+ assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+> myMean <- function(assignment2) { return(sum(assignment2)/length(assignment2)) }
+> myMean(assignment2)
+[1] 19.25
+
+This function took the inputted numbers (assignment2) and returned the sum of the numbers, divided by the length of the vector (assignment2), to get the mean value of the numbers in assignment2.
+
+The mean is 19.25.
