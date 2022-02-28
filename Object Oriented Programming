@@ -1,0 +1,68 @@
+S3 Examples:
+play <- list(game = "Tetris", score = 96, user = "Dave")
+class(play) <- "Video Game"
+play # Result
+$game
+[1] "Tetris"
+$score
+[1] 96
+$user
+[1] "Dave"
+
+flower <- list(petals = 5, color = "purple", shape = "trumpit", thornes = FALSE)
+class(flower) <- "Plant"
+flower # Results
+$petals
+[1]
+$color
+[1] "purple"
+$shape
+[1] "trumpit"
+$thornes
+[1] FALSE
+
+
+S4 Examples:
+Video Game <- function(g, s, u)
+{
+if(s<1)stop("You cannot have a negative score")
+values <- list(game = g, score = s, user = u)
+attr(value, "class") <- "Video Game"
+value
+}
+
+play <- Video Game("Tetris", 96, "Dave")
+play
+$game
+[1] "Tetris"
+$score
+[1] 96
+$user
+"Dave"
+attr("class")
+[1] "Video Game"
+class(play)
+[1] "Video Game"
+play <- Video Game("Pac Man", -8, "Chris") Error in Video Game("Pac Man", -8, "Chris): You cannot have a negative score
+
+Plant <- function(p, c, s, t)
+{
+values <- list(petal = p, color = c, shape = s, thornes = t)
+attr(value, "class") <- Plant
+value
+}
+
+flower <- Plant(5, "purple", "trumpit", FALSE)
+flower
+$petal
+[1] 5
+$color
+[1] "purple"
+$shape
+[1] "trumpit"
+$thornes
+[1] FALSE
+attr("class")
+[1] "Plant"
+class(flower)
+[1] "Plant"
