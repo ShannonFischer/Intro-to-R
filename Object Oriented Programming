@@ -25,7 +25,7 @@ $thornes
 S4 Examples:
 Video Game <- function(g, s, u)
 {
-if(s<1)stop("You cannot have a negative score")
+if(s<0)stop("You cannot have a negative score")
 values <- list(game = g, score = s, user = u)
 attr(value, "class") <- "Video Game"
 value
