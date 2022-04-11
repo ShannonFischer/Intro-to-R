@@ -1,0 +1,33 @@
+---
+title: "Math Magic FAQ"
+author: "Shannon Fischer"
+date: "4/11/2022"
+output: html_document
+---
+setwd("~/R Programming/Week 12")
+
+```{r setup, include=FALSE}
+# FAQ
+
+# Question 1: What does this package do?
+
+# Answer 1: This package contains functions that perform math tricks.
+
+# Question 2: Why was it created?
+
+# Answer 2: The purpose of this package is to show simple examples of functions and how they work. It is intended to educate programmers new to R.
+
+# Question 3: Who created this package?
+
+# Answer 3: This package was created by Shannon Fischer.
+
+# Question 4: Can I use any number in these functions?
+
+# Answer 4: Each function will come with it's own set of instructions explaining what type of number to use with the function.
+
+# Question 5: Can I use these functions for anything else?
+
+# Answer 5: This package is open source so anyone can use this code for anything.
+```
+
+
